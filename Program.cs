@@ -16,6 +16,8 @@ namespace DemoPets
             System.Console.WriteLine("svar:{0}", steen.Pet.Spicie.Name);
             System.Console.ReadKey();
 
+            // steen.OnNameChanged() 
+
             System.Console.WriteLine("Person navn: {0}", steen.getName());
             System.Console.WriteLine("Person alder: {0}", steen.getAlder());
             System.Console.WriteLine("Person kæledyrs antal øjne: {0}", steen.getPeronsPetsNumberOfEyes());
