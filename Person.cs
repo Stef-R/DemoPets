@@ -22,6 +22,15 @@ namespace DemoPets
             this.yearBorn = yearBorn;
             this.pet = pet;
         }
+        public Person(string name):this(name, 0, null)  {}
+        public Person(string name,Pet pet) : this(name,0,pet) { }
+        public Person(string name, string petName, Specie specie)
+        {
+            this.name = name;
+            Pet newPet = new Pet(specie, petName);
+            this.pet=newPet;
+        }
+
         public string getName()
         {
             return this.Name;
