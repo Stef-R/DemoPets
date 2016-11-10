@@ -8,8 +8,12 @@ namespace DemoPets
 {
     class Pet
     {
-        public Specie spicie;
-        public string name;
+        private Specie spicie;
+        private string name;
+
+        public Specie Spicie { get { return spicie; } }
+        public string Name { get { return name; } }
+
         public Pet(Specie spicie, string name)
         {
             this.spicie = spicie;

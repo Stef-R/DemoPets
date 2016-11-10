@@ -8,11 +8,23 @@ namespace DemoPets
 {
     class Specie
     {
-        public string name;
-        public int numbersOfEyes;
-        public int numbersOfLegs;
+        private string name;
+        private int numbersOfEyes;
+        private int numbersOfLegs;
 
-        public Specie(string name,int numbersOfEyes,int numbersOfLegs)
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+        }
+        public int NumbersOfEyes { get { return numbersOfEyes; } }
+        public int NumbersOfLegs { get { return numbersOfLegs; } }
+
+
+        public Specie(string name, int numbersOfEyes, int numbersOfLegs)
         {
             this.name = name;
             this.numbersOfEyes = numbersOfEyes;
